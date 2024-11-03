@@ -45,6 +45,21 @@ include a style for these classes you should remove the class from your html fil
             <a href="#images">Image Gallery</a>
             <a href="#contact">Contact Me</a>
             <hr>
+            <div class="socials">
+            <p>Socials</p>
+                <div class="social-container">
+                    <a href="google.com">
+                        <img src="images/linkedin.svg" alt="LinkedIn icon"/>
+                    </a>
+                <a href="https://github.com/psgnezdilov">
+                    <img src="images/github.svg" alt="GitHub icon"/>
+                </a>
+
+                    <a href="">
+                        <img src="images/instagram.svg" alt="Instagram icon"/>
+                    </a>
+                </div>
+            </div>
         </nav>
 
         <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
@@ -71,31 +86,59 @@ include a style for these classes you should remove the class from your html fil
                     <p>Web Design</p>
                     <p>Fullstack Development</p>
                     <p>Machine Learning</p>
-                    <h3>Socials</h3>
                 </div>
             </div>
         </section>
 
-        <section id="work" class="work-experience container">
-            <div class="container-content">
-                <h2>Work Experience</h2>
-                <details>
-                    <summary class="google">Google</summary>
-                    <p>Test</p>
-                </details>
-                <details>
-                    <summary class="meta">
-                        Meta
-                    </summary>
-                    <p>Test</p>
-                </details>
-                <details>
-                    <summary class="openai">OpenAI</summary>
-                    <p>Test</p>
-                </details>
+        <section>
+
+            <h2>Work Experience</h2>
+
+            <div class="work-experience-container">
+
+                <div class="google-container">
+                    <details>
+                        <summary>
+                            <span>Google</span>
+                        </summary>
+                    </details>
+                    <div class="google-content">
+                        <p>
+                            Test text
+                        </p>
+                    </div>
+                </div>
+
+                <div class="meta-container">
+                    <details>
+                        <summary>
+                            <span>Meta</span>
+                        </summary>
+                    </details>
+                    <div class="meta-content">
+                        <p>
+                            Test text
+                        </p>
+                    </div>
+                </div>
+
+                <div class="openai-container">
+                    <details>
+                        <summary>
+                            <span>OpenAI</span>
+                        </summary>
+                    </details>
+                    <div class="openai-content">
+                        <p>
+                            Test text
+                        </p>
+                    </div>
+                </div>
+
+            </div>
                 <!-- Add expandable additional info about the work experience -->
                 <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
-            </div>
+
         </section>
 
         <section id="images" class="image-gallery container">
