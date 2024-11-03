@@ -1,0 +1,244 @@
+/* Fonts */
+.font {
+                 font-family: "Montserrat", sans-serif;
+                 font-optical-sizing: auto;
+                 font-weight: normal;
+                 font-style: normal;
+             }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin-left: 15%;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #E7D2CC;
+    color: #000000;
+}
+
+.page-nav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #B9B7BD;
+    overflow-x: hidden;
+}
+
+.header-container{
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+}
+
+.header-text{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.header-container img {
+    width: 50%;
+    height: auto;
+
+    border-radius: 15px;
+
+    -webkit-user-drag: none;
+}
+
+.nav-dashboard{
+    background-color: #868B8E;
+}
+
+.page-nav p {
+    font-weight: bold;
+    /* background-color: #dddddd; */
+    margin: 0;
+    padding: 10% 5% 10% 5%;
+}
+.page-nav a {
+    padding: 10% 5% 10% 5%;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    color: black;
+}
+#about {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 768px) {
+    .page-nav {
+        width: 25%;
+    }
+    body {
+        margin-left: 25%;
+    }
+}
+.page-nav a:hover {
+    background-color: #EEEDE7;
+}
+
+/* Contact Me section */
+.contact-me {
+    text-align: center;
+    background-color: #EEEDE7;
+
+    border-radius: 5px;
+}
+h2.contact-me {
+    background-color: #B9B7BD;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+input{
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: fit-content;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #B9B7BD;
+}
+input[type=submit]:hover {
+    background-color: #868B8E;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.contact-message {
+    width: 95%;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+}
+/* Work Experience section */
+details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #B9B7BD;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px #bbbbbb;
+    overflow: hidden;
+}
+details[open] {
+}
+details:hover {
+    background-color: #868B8E;
+}
+
+details > summary {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+summary.google::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../images/google.svg");
+    background-size: cover;
+    transition: 2s;
+}
+summary.meta::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../images/meta.svg");
+    background-size: cover;
+    transition: 2s;
+}
+summary.openai::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../images/openai.svg");
+    background-size: cover;
+    transition: 2s;
+}
+
+details[open] summary::after {
+    margin: 5px 0 5px 0;
+    transform: rotate(360deg);
+}
+details[open] summary.meta::after {
+    transform: rotateY(360deg);
+}
+details p {
+    padding: 0;
+    max-height: 0;
+}
+details[open] p {
+    background-color: #EEEDE7;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    border-radius: 0 0 5px 5px;
+    animation: animateDown 1s linear backwards;
+    max-height: 200px;
+    transition: padding, max-height 2s linear;
+}
+
+    @keyframes animateDown {
+        0% {
+            opacity: 0;
+            transform: translateZ(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+/* box sizing */
+
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+
+
+/* flexible content images code */
+
+
+/* navigation styles */
+
+
+/* page header styles*/
+
+
+/* main layout */
+
+
+
+
+/* styling for the section content */
+
+
+/* background colours for sections */
+
+
+/* form styling */
+
+
+/* footer styling */
+
+
