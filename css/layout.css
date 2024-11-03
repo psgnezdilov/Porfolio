@@ -16,6 +16,10 @@ body {
     color: #000000;
 }
 
+hr {
+    border-color: black;
+}
+
 .page-nav {
     height: 100%;
     width: 15%;
@@ -178,38 +182,71 @@ summary.openai::after {
     transition: 2s;
 }
 
-details[open] summary::after {
+details[open] > summary::after {
     margin: 5px 0 5px 0;
     transform: rotate(360deg);
 }
-details[open] summary.meta::after {
+details[open] > summary.meta::after {
     transform: rotateY(360deg);
 }
-details p {
+details > p {
     padding: 0;
-    max-height: 0;
-}
-details[open] p {
     background-color: #EEEDE7;
-    padding: 10px;
+    height: 0;
+    box-sizing: content-box;
     margin: 0;
-    display: block;
     border-radius: 0 0 5px 5px;
-    animation: animateDown 1s linear backwards;
-    max-height: 200px;
-    transition: padding, max-height 2s linear;
+    display: block;
+    visibility: visible;
+    /*scale: 1 0;*/
+    /*animation: detailsClosing 2s linear;*/
+    /*animation: detailsOpening 2s forwards;*/
+    /*background-size: cover;*/
+}
+details[open] > p {
+    padding: 10px;
+    /*transition: padding 3s linear;*/
+    /*transition: ease-out;*/
+    transition-duration: 2s;
+    /*line-height: 15px;*/
+    height: 20px;
+    transition: 2s;
 }
 
-    @keyframes animateDown {
-        0% {
-            opacity: 0;
-            transform: translateZ(-50px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateZ(0);
-        }
-    }
+/*details[close] > p {*/
+/*    animation: detailsClosing 2s linear backwards;*/
+/*}*/
+
+    /*@keyframes detailsOpening {*/
+    /*    0% {*/
+    /*        opacity: 0;*/
+    /*        transform: translateZ(-50px);*/
+    /*        height: 0;*/
+    /*        padding: 0;*/
+    /*    }*/
+    /*    100% {*/
+    /*        height: 20px;*/
+    /*        padding: 10px;*/
+    /*        opacity: 1;*/
+    /*        transform: translateZ(0);*/
+    /*    }*/
+    /*}*/
+
+    /*@keyframes detailsClosing {*/
+    /*    0% {*/
+    /*        opacity: 1;*/
+    /*        transform: translateZ(0);*/
+    /*        height: 20px;*/
+    /*        padding: 10px;*/
+    /*    }*/
+    /*    100% {*/
+    /*        height: 0;*/
+    /*        padding: 0;*/
+    /*        opacity: 0;*/
+    /*        transform: translateZ(-50px);*/
+    /*    }*/
+    /*}*/
+    /*}*/
 /* box sizing */
 
 
