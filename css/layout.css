@@ -132,10 +132,6 @@ hr {
     width: inherit;
 }
 
-.socials-content a:hover {
-    background-color: #B9B7BD;
-}
-
 /*Main part*/
 
 main {
@@ -200,6 +196,10 @@ summary {
     padding: 10px;
 }
 
+.work-experience-container p {
+    margin: 10px;
+}
+
 span:hover {
     cursor: pointer;
 }
@@ -218,18 +218,18 @@ div.google-container {
 
 div.google-content {
     box-sizing: content-box;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: 1s;
-    transition-property: height;
+    transition: 1s ease-out;
+    transition-property: max-height;
     border-radius: 0 0 10px 10px;
     box-shadow: 2px 3px 3px #bbbbbb;
 }
 
 details[open] + div.google-content {
-    height: 20px;
-    transition: 1s;
-    transition-property: height;
+    max-height: 230px;
+    transition: 1s ease-out;
+    transition-property: max-height;
     transition-delay: 0.8s;
 }
 
@@ -251,16 +251,16 @@ div.meta-container {
 
 div.meta-content {
     box-sizing: border-box;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 1s ease-out;
+    transition: max-height 1s ease-out;
     border-radius: 0 0 10px 10px;
     box-shadow: 2px 3px 3px #bbbbbb;
 }
 
 details[open] + div.meta-content {
-    height: 20px;
-    transition: height 1s ease-out;
+    max-height: 230px;
+    transition: max-height 1s ease-out;
     transition-delay: 0.8s;
 }
 
@@ -278,16 +278,16 @@ div.openai-container {
 
 div.openai-content {
     box-sizing: border-box;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 1s ease-out;
+    transition: max-height 1s ease-out;
     border-radius: 0 0 10px 10px;
     box-shadow: 2px 3px 3px #bbbbbb;
 }
 
 details[open] + div.openai-content {
-    height: 20px;
-    transition: height 1s ease-out;
+    max-height: 230px;
+    transition: max-height 1s ease-out;
     transition-delay: 0.8s;
 }
 
