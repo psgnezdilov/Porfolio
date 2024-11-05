@@ -22,10 +22,10 @@ include a style for these classes you should remove the class from your html fil
 <body class="font">
 
 <nav class="page-nav">
-    <div class="header-container">
+    <header class="header-container">
         <img src="images/cat.JPG" alt="My Photo">
         <p class="header-text">Pavel Soshenko Gnezdilov</p>
-    </div>
+    </header>
     <p class="subheader-text">A Computer Science undergraduate student with a passion for sports and languages</p>
     <div class="nav-dashboard">
         <p>DASHBOARD</p>
@@ -54,41 +54,47 @@ include a style for these classes you should remove the class from your html fil
 </nav>
 
 <main class="main-style">
-    <header class="page-header">
-        <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
-        <div class="header-content"> <!-- What is a div?  Replace this comment with an explanation.-->
-            <h1>Pavel Soshenko Gnezdilov</h1>
-            <p>A Computer Science undergraduate student with a passion for sports and languages</p>
-        </div>
-    </header>
-    <!-- You could style Main here if you wish-->
 
-    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
     <section id="about" class="about-me container">
         <!--What does the section do here?  Replace this comment with a brief explanation. -->
         <div class="container-content">
             <h2>About Me</h2>
             <div class="content">
                 <!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
-                <p>I am currently a Computer Science student in DCU. Moved to Spain form Russia at the age of 14 and
-                    had been living there before coming to study to Ireland.</p>
-                <p>I have very broad interests such as music and sports. I know 4 different languages and willing to
-                    learn more.</p>
-                <h3>Languages I Know</h3>
-                <h4>English</h4>
-                <p></p>
-                <h4>Spanish</h4>
-                <p>I have a very good knowledge of Spanish language since I lived there since I was 14, and finished
-                    there my secondary school</p>
-                <h4>Catalan</h4>
-                <p>Same with the Spanish, I know Catalan language because I lived in the Catalunya region, where the
-                    teaching in schools is mainly in Catalan</p>
-                <h4>Russian</h4>
-                <p>Russian is my native language and I have never stopped using it</p>
-                <h3>Technical Skills</h3>
-                <p>Web Design</p>
-                <p>Fullstack Development</p>
-                <p>Machine Learning</p>
+                <p>My name is Pavel and I am currently a Computer Science at DCU in Ireland. I was born in Russia but moved to Spain at the age of 14 without any knowledge of their language. I went there to the secondary and high schools.
+                I learned Spanish and Catalan there by just listening to my peers and understanding the meaning of words from context.</p>
+                <p>I have very broad interests in pretty much everything. I have tried multiple sports and instruments, and because I lived in Spain now I know 4 different languages and willing to learn more.</p>
+
+                <h3>Spoken Languages</h3>
+                <p>Russian - Native</p>
+                <p>English - Fluent</p>
+                <p>Spanish - Fluent</p>
+                <p>Catalan - Basic</p>
+
+                <h3>Programming Languages</h3>
+                <p>Proficient: Python, JavaScript, SQL</p>
+                <p>Familiar: C++, HTML/CSS</p>
+
+                <div>
+                    <h3>Technical Skills</h3>
+
+                <div class="technical-skills-content">
+                <div>
+                    <h4>Machine Learning and Data Science</h4>
+                <p>TensorFlow and PyTorch</p>
+                <p>Data Processing and Feature Engineering</p>
+                <p>Model Optimization</p>
+                <p>Natural Language Processing</p>
+                </div>
+
+                <div>
+                    <h4>Web Development</h4>
+                <p>Fullstack-Development</p>
+                <p>Responsive Design</p>
+                <p>Version Control</p>
+                </div>
+                </div>
+                </div>
             </div>
         </div>
     </section>
@@ -173,21 +179,21 @@ include a style for these classes you should remove the class from your html fil
 
         <div class="container-content">
             <h2>Image Gallery</h2>
-            <div class="content">
+            <div class="image-content">
 
                 <figure class="an-image">
-                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                    <figcaption class="image-caption"> Picture</figcaption>
+                    <img src="images/el-retiro1.jpg" alt="Photo of a lake with the statue on the background"/>
+                    <figcaption class="image-caption">It is a photo of the Madrid's largest park. On the last year of the high school we had a trip there with my class, and we had lots of unforgettable situations and experiences</figcaption>
                 </figure>
 
                 <figure class="an-image">
-                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                    <figcaption class="image-caption"> Picture</figcaption>
+                    <img src="images/nightclub.jpg" alt="Photo of a nightclub"/>
+                    <figcaption class="image-caption">Nightclubs and reggaeton are an important part of a Spanish culture. I have spent there countless nights with my friends</figcaption>
                 </figure>
 
                 <figure class="an-image">
-                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                    <figcaption class="image-caption"> Picture</figcaption>
+                    <img src="images/salou-beach.jpg" alt="Photo of the Mediterranean sea with the cove on the left">
+                    <figcaption class="image-caption">Beaches have become an essential part of me, since I spent most summers hanging out with my friends at the beach and playing volleyball</figcaption>
                 </figure>
 
             </div>

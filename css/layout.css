@@ -39,9 +39,9 @@ hr {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #124559;
+    background-color: #424245;
     overflow-x: hidden;
-    color: #EFF6E0;
+    color: #f5f5f7;
 }
 
 .header-container {
@@ -84,7 +84,7 @@ hr {
 
 .nav-dashboard p {
     padding-bottom: 5%;
-    color: #d0d0d0;
+    color: #D7D7D9;
     text-align: center;
 }
 
@@ -93,13 +93,13 @@ hr {
     text-decoration: none;
     font-size: 15px;
     display: block;
-    color: #EFF6E0;
+    color: #f5f5f7;
     text-align: left;
 }
 
 .nav-dashboard a:hover {
 
-    background-color: #01161E;
+    background-color: #323235;
 }
 
 .socials p {
@@ -138,7 +138,7 @@ main {
     margin-left: 15%;
     padding: 20px;
     text-align: center;
-    background-color: #EFF6E0;
+    background-color: #f5f5f7;
 
     h1 {
         margin-top: 0;
@@ -146,15 +146,43 @@ main {
 
     p {
         font-size: 18px;
-        color: #2a2a2a;
+        color: #323235;
     }
+}
+
+#about h2 {
+    margin-top: 0;
+}
+
+.technical-skills-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.technical-skills-content div {
+    width: 50%;
+}
+
+.image-content {
+    display: flex;
+    /*box-sizing: border-box;*/
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.image-content figure {
+    width: 33%;
+}
+.image-content img {
+    width: 100%;
 }
 
 /*Work experience section*/
 
 details {
     margin-bottom: 0;
-    background-color: #B9B7BD;
+    background-color: #B9B9BC;
     border-radius: 10px;
     box-shadow: 2px 3px 3px #bbbbbb;
     overflow: hidden;
@@ -169,7 +197,7 @@ details {
 }
 
 details:hover {
-    background-color: #868B8E;
+    background-color: #9C9C9E;
 }
 
 details[open] {
@@ -194,6 +222,7 @@ summary {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    /*background-color: #B9B9BC;*/
 }
 
 .work-experience-container p {
@@ -224,10 +253,11 @@ div.google-content {
     transition-property: max-height;
     border-radius: 0 0 10px 10px;
     box-shadow: 2px 3px 3px #bbbbbb;
+    background-color: #D7D7D9;
 }
 
 details[open] + div.google-content {
-    max-height: 230px;
+    max-height: 300px;
     transition: 1s ease-out;
     transition-property: max-height;
     transition-delay: 0.8s;
@@ -259,7 +289,7 @@ div.meta-content {
 }
 
 details[open] + div.meta-content {
-    max-height: 230px;
+    max-height: 300px;
     transition: max-height 1s ease-out;
     transition-delay: 0.8s;
 }
@@ -286,7 +316,7 @@ div.openai-content {
 }
 
 details[open] + div.openai-content {
-    max-height: 230px;
+    max-height: 300px;
     transition: max-height 1s ease-out;
     transition-delay: 0.8s;
 }
@@ -294,13 +324,14 @@ details[open] + div.openai-content {
 /* Contact Me section */
 
 .contact-container h2 {
-    background-color: #B9B7BD;
+    background-color: #B9B9BC;
 
     border-radius: 5px 5px 0 0;
 }
 
 .contact-container {
     text-align: center;
+    background-color: #D7D7D9;
 }
 
 .contact-container input {
@@ -315,11 +346,11 @@ details[open] + div.openai-content {
     width: fit-content;
     border: none;
     margin-bottom: 15px;
-    background-color: #B9B7BD;
+    background-color: #B9B9BC;
 }
 
 .contact-container input[type=submit]:hover {
-    background-color: #868B8E;
+    background-color: #9C9C9E;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
