@@ -4,32 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Add your meta description"/>
-    <!-- meta tag below is used for Internet Explorer and mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
     <title>Pavel Soshenko Gnezdilov Portfolio</title>
-    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css"/>
 </head>
-
-<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
-include a style for these classes you should remove the class from your html file //-->
 
 <body class="font">
 
 <nav class="page-nav">
-    <header class="header-container">
+    <header class="header-container"> <!-- defines a container for introductory content or navigational links -->
         <img src="images/cat.JPG" alt="My Photo">
         <p class="header-text">Pavel Soshenko Gnezdilov</p>
     </header>
     <p class="subheader-text">A Computer Science undergraduate student with a passion for sports and languages</p>
-    <div class="nav-dashboard">
+    <div class="nav-dashboard"> <!-- div is used to organize content for styling or layout purposes -->
         <p>DASHBOARD</p>
-        <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+
         <a href="#about">About Me</a>
         <a href="#work">Work Experience</a>
         <a href="#images">Image Gallery</a>
@@ -56,44 +46,52 @@ include a style for these classes you should remove the class from your html fil
 <main class="main-style">
 
     <section id="about" class="about-me container">
-        <!--What does the section do here?  Replace this comment with a brief explanation. -->
-        <div class="container-content">
+        <!-- It is used to group related content into a distinct section -->
+        <div>
             <h2>About Me</h2>
-            <div class="content">
-                <!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
-                <p>My name is Pavel and I am currently a Computer Science at DCU in Ireland. I was born in Russia but moved to Spain at the age of 14 without any knowledge of their language. I went there to the secondary and high schools.
-                I learned Spanish and Catalan there by just listening to my peers and understanding the meaning of words from context.</p>
-                <p>I have very broad interests in pretty much everything. I have tried multiple sports and instruments, and because I lived in Spain now I know 4 different languages and willing to learn more.</p>
+            <div>
+
+                <p>My name is Pavel and I am currently a Computer Science at DCU in Ireland. I was born in Russia but
+                    moved to Spain at the age of 14 without any knowledge of their language. I went there to the
+                    secondary and high schools.
+                    I learned Spanish and Catalan there by just listening to my peers and understanding the meaning of
+                    words from context.</p>
+                <p>I have very broad interests in pretty much everything. I have tried multiple sports and instruments,
+                    and because I lived in Spain now I know 4 different languages and willing to learn more.</p>
 
                 <h3>Spoken Languages</h3>
+
                 <p>Russian - Native</p>
                 <p>English - Fluent</p>
                 <p>Spanish - Fluent</p>
                 <p>Catalan - Basic</p>
 
                 <h3>Programming Languages</h3>
+
                 <p>Proficient: Python, JavaScript, SQL</p>
                 <p>Familiar: C++, HTML/CSS</p>
 
                 <div>
                     <h3>Technical Skills</h3>
 
-                <div class="technical-skills-content">
-                <div>
-                    <h4>Machine Learning and Data Science</h4>
-                <p>TensorFlow and PyTorch</p>
-                <p>Data Processing and Feature Engineering</p>
-                <p>Model Optimization</p>
-                <p>Natural Language Processing</p>
-                </div>
+                    <div class="technical-skills-content">
+                        <div>
+                            <h4>Machine Learning and Data Science</h4>
 
-                <div>
-                    <h4>Web Development</h4>
-                <p>Fullstack-Development</p>
-                <p>Responsive Design</p>
-                <p>Version Control</p>
-                </div>
-                </div>
+                            <p>TensorFlow and PyTorch</p>
+                            <p>Data Processing and Feature Engineering</p>
+                            <p>Model Optimization</p>
+                            <p>Natural Language Processing</p>
+                        </div>
+
+                        <div>
+                            <h4>Web Development</h4>
+
+                            <p>Fullstack-Development</p>
+                            <p>Responsive Design</p>
+                            <p>Version Control</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,16 +111,23 @@ include a style for these classes you should remove the class from your html fil
                 </details>
                 <div class="google-content">
                     <p>
-                        During my internship at Google, I contributed to a collaborative project focused on optimizing backend systems for data processing.
-                        My primary role was to design and implement modules that streamlined data workflows, reducing processing times by 20% on average.
-                        I worked closely with a team of engineers, enhancing my skills in Python, SQL, and distributed computing.
-                        Additionally, I gained experience with Google’s internal tools and cloud services, which broadened my understanding of scalable architecture.
+                        During my internship at Google, I contributed to a collaborative project focused on optimizing
+                        backend systems for data processing.
+                        My primary role was to design and implement modules that streamlined data workflows, reducing
+                        processing times by 20% on average.
+                        I worked closely with a team of engineers, enhancing my skills in Python, SQL, and distributed
+                        computing.
+                        Additionally, I gained experience with Google’s internal tools and cloud services, which
+                        broadened my understanding of scalable architecture.
                     </p>
                     <p>
-                        Throughout the internship, I regularly presented progress updates, participated in code reviews, and received mentorship from senior engineers.
-                        This experience improved my technical skills and problem-solving abilities and gave me insight into agile project management.
+                        Throughout the internship, I regularly presented progress updates, participated in code reviews,
+                        and received mentorship from senior engineers.
+                        This experience improved my technical skills and problem-solving abilities and gave me insight
+                        into agile project management.
                         By the end of my internship, I had contributed to a codebase used in production,
-                        gaining hands-on experience in software engineering within a world-class environment that emphasized innovation and team collaboration.
+                        gaining hands-on experience in software engineering within a world-class environment that
+                        emphasized innovation and team collaboration.
                     </p>
                 </div>
             </div>
@@ -135,15 +140,22 @@ include a style for these classes you should remove the class from your html fil
                 </details>
                 <div class="meta-content">
                     <p>
-                        As a Full-Stack Development Intern at Meta, I worked on a dynamic web application to enhance user experience and increase engagement across platforms.
-                        My main contributions included developing and refining both frontend components in React and backend APIs in Node.js.
-                        I collaborated closely with UX designers to implement responsive, user-friendly interfaces and optimized data retrieval processes, which improved load times by 15%.
+                        As a Full-Stack Development Intern at Meta, I worked on a dynamic web application to enhance
+                        user experience and increase engagement across platforms.
+                        My main contributions included developing and refining both frontend components in React and
+                        backend APIs in Node.js.
+                        I collaborated closely with UX designers to implement responsive, user-friendly interfaces and
+                        optimized data retrieval processes, which improved load times by 15%.
                     </p>
                     <p>
-                        Additionally, I integrated features with internal APIs and contributed to the unit and integration testing process, ensuring reliability and smooth deployment.
-                        Through regular code reviews and mentorship sessions with experienced engineers, I developed best practices in code efficiency and modular design.
-                        My work was part of a larger team project that followed agile methodologies, enhancing my collaboration and project management skills.
-                        This internship reinforced my expertise in full-stack development, particularly in crafting scalable, user-focused solutions in a high-impact tech environment.
+                        Additionally, I integrated features with internal APIs and contributed to the unit and
+                        integration testing process, ensuring reliability and smooth deployment.
+                        Through regular code reviews and mentorship sessions with experienced engineers, I developed
+                        best practices in code efficiency and modular design.
+                        My work was part of a larger team project that followed agile methodologies, enhancing my
+                        collaboration and project management skills.
+                        This internship reinforced my expertise in full-stack development, particularly in crafting
+                        scalable, user-focused solutions in a high-impact tech environment.
                     </p>
                 </div>
             </div>
@@ -156,44 +168,56 @@ include a style for these classes you should remove the class from your html fil
                 </details>
                 <div class="openai-content">
                     <p>
-                        As a Machine Learning Intern at OpenAI, I focused on developing and fine-tuning models for natural language processing (NLP) applications.
-                        My primary responsibilities included data preprocessing, implementing algorithms, and optimizing model performance for real-world applications.
-                        I worked extensively with Python, TensorFlow, and PyTorch to build and evaluate models, achieving a 12% increase in accuracy on key benchmarks.
+                        As a Machine Learning Intern at OpenAI, I focused on developing and fine-tuning models for
+                        natural language processing (NLP) applications.
+                        My primary responsibilities included data preprocessing, implementing algorithms, and optimizing
+                        model performance for real-world applications.
+                        I worked extensively with Python, TensorFlow, and PyTorch to build and evaluate models,
+                        achieving a 12% increase in accuracy on key benchmarks.
                     </p>
                     <p>
-                        Working alongside research scientists and engineers, I contributed to a project that explored the use of transformer models to improve conversational AI.
-                        I participated in weekly research discussions, gaining insights into the latest advancements in machine learning and deep learning techniques.
-                        Regular code reviews and mentorship enhanced my understanding of model interpretability, data efficiency, and best practices for AI deployment.
-                        This internship not only solidified my technical foundation in machine learning but also offered me hands-on experience with cutting-edge research in an innovative, collaborative environment.
+                        Working alongside research scientists and engineers, I contributed to a project that explored
+                        the use of transformer models to improve conversational AI.
+                        I participated in weekly research discussions, gaining insights into the latest advancements in
+                        machine learning and deep learning techniques.
+                        Regular code reviews and mentorship enhanced my understanding of model interpretability, data
+                        efficiency, and best practices for AI deployment.
+                        This internship not only solidified my technical foundation in machine learning but also offered
+                        me hands-on experience with cutting-edge research in an innovative, collaborative environment.
                     </p>
                 </div>
             </div>
 
         </div>
-        <!-- Add expandable additional info about the work experience -->
-        <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
 
     </section>
 
-    <section id="images" class="image-gallery container">
+    <section id="images">
 
-        <div class="container-content">
+        <div>
             <h2>Image Gallery</h2>
             <div class="image-content">
 
-                <figure class="an-image">
+                <figure>
                     <img src="images/el-retiro1.jpg" alt="Photo of a lake with the statue on the background"/>
-                    <figcaption class="image-caption">It is a photo of Madrid's largest park. In the last year of high school, my class and I took a trip there, and we had many unforgettable moments and experiences</figcaption>
+                    <figcaption class="image-caption">It is a photo of Madrid's largest park. In the last year of high
+                        school, my class and I took a trip there, and we had many unforgettable moments and experiences
+                    </figcaption>
                 </figure>
 
-                <figure class="an-image">
+                <figure>
                     <img src="images/nightclub.jpg" alt="Photo of a nightclub"/>
-                    <figcaption class="image-caption">Nightclubs and reggaeton are an important part of Spanish culture. I have spent countless nights there with my friends</figcaption>
+                    <figcaption class="image-caption">Nightclubs and reggaeton are an important part of Spanish culture.
+                        I have spent countless nights there with my friends
+                    </figcaption>
                 </figure>
 
-                <figure class="an-image">
+                <figure>
                     <img src="images/salou-beach.jpg" alt="Photo of the Mediterranean sea with the cove on the left">
-                    <figcaption class="image-caption">Beaches and the Mediterranean Sea have become an essential part of my life, as I have spent most summers hanging out with friends and playing volleyball by the shore</figcaption>
+                    <figcaption class="image-caption">Beaches and the Mediterranean Sea have become an essential part of
+                        my life, as I have spent most summers hanging out with friends and playing volleyball by the
+                        shore
+                    </figcaption>
                 </figure>
 
             </div>
@@ -203,7 +227,6 @@ include a style for these classes you should remove the class from your html fil
     <section id="contact" class="contact-container">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/[your email address goes here]" method="post">
-            <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
             <p>
                 <label for="contact-name">Name</label><br>
                 <input id="contact-name" type="text" name="contact-name" placeholder="Your name.."/>
@@ -220,11 +243,9 @@ include a style for these classes you should remove the class from your html fil
             </p>
             <p>
                 <label for="contact-message">Message</label><br>
-                <textarea id="contact-message" name="contact-message"
-                          placeholder="Your message.." rows="5">
-                            </textarea>
+                <textarea id="contact-message" name="contact-message" placeholder="Your message.." rows="5"></textarea>
             </p>
-            <p class="submit">
+            <p>
                 <input type="submit" value="Send the message"/>
             </p>
         </form>
@@ -232,23 +253,21 @@ include a style for these classes you should remove the class from your html fil
 
     <hr>
 
-    <footer id="footer-layout">
-        <p> &copy; <a href="dcu.ie/">DCU 2024-2025</a>
+    <footer id="footer-layout" class="footer-container">
+        <p> &copy; <a href="https://dcu.ie/">DCU 2024-2025</a>
             <span class="footer-separator">&middot;</span>
             <span class="footer-text">Pavel Soshenko Gnezdilov</span>
             <span class="footer-separator">&middot;</span>
             <span class="footer-text">This is student coursework</span>
             <span class="footer-separator">&middot;</span>
-            <span class="footer-text">Lecturer<a href="http://www.computing.dcu.ie/~jkernan"> Jane Kernan</a></span>
+            <span class="footer-text">Lecturer <a
+                    href="https://www.computing.dcu.ie/~mscriney">Michael Scriney</a></span>
             <span class="footer-separator">&middot;</span>
             <span class="footer-text"><a href="https://validator.w3.org/check?uri=referer"
                                          title="W3C HTML Validation Service">Valid HTML</a><br/></span>
         </p>
-        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
 
     </footer>
 </main>
-
 </body>
-
 </html>

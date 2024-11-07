@@ -1,6 +1,7 @@
 /* Fonts */
+
 .font {
-    font-family: "Myriad", "Helvetica", "Montserrat", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
@@ -31,7 +32,11 @@ hr {
     }
 }
 
-/*Left panel*/
+img {
+    -webkit-user-drag: none;
+}
+
+/* Left panel */
 
 .page-nav {
     height: 100%;
@@ -49,7 +54,6 @@ hr {
 .page-nav p {
     font-weight: bold;
     margin: 10% 5% 10% 5%;
-    /*padding: 10% 5% 10% 5%;*/
 }
 
 .header-container {
@@ -68,10 +72,7 @@ hr {
 .header-container img {
     width: 45%;
     height: auto;
-
     border-radius: 15px;
-
-    -webkit-user-drag: none;
 }
 
 .header-text {
@@ -84,7 +85,6 @@ p.subheader-text {
 }
 
 .nav-dashboard p {
-    /*padding-bottom: 5%;*/
     color: #D7D7D9;
     text-align: center;
     margin-bottom: 5%;
@@ -111,7 +111,6 @@ p.subheader-text {
 .socials-content {
     box-sizing: border-box;
     display: flex;
-    /*justify-content: space-around;*/
     align-items: center;
     @media only screen and (max-width: 1000px) {
         flex-direction: column;
@@ -134,7 +133,7 @@ p.subheader-text {
     width: inherit;
 }
 
-/*Main part*/
+/* Main part */
 
 main {
     margin-left: 15%;
@@ -165,22 +164,7 @@ main {
     width: 50%;
 }
 
-.image-content {
-    display: flex;
-    /*box-sizing: border-box;*/
-    justify-content: space-evenly;
-    width: 100%;
-
-}
-
-.image-content figure {
-    width: 33%;
-}
-.image-content img {
-    width: 100%;
-}
-
-/*Work experience section*/
+/* Work experience section */
 
 details {
     margin-bottom: 0;
@@ -325,6 +309,21 @@ details[open] + div.openai-content {
     transition-delay: 0.8s;
 }
 
+/* Image gallery */
+
+.image-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.image-content figure {
+    width: 33%;
+}
+.image-content img {
+    width: 100%;
+}
+
 /* Contact Me section */
 
 .contact-container h2 {
@@ -339,6 +338,7 @@ details[open] + div.openai-content {
 }
 
 .contact-container input {
+    font-family: inherit;
     width: 95%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -360,14 +360,11 @@ details[open] + div.openai-content {
 }
 
 .contact-container textarea {
+    font-family: inherit;
     width: 95%;
     resize: none;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     padding: 12px;
-}
-
-label {
-    display: block;
 }
