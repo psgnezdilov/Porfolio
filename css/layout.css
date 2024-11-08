@@ -320,6 +320,7 @@ details[open] + div.openai-content {
 .image-content figure {
     width: 33%;
 }
+
 .image-content img {
     width: 100%;
 }
