@@ -166,7 +166,7 @@ main {
 
 /* Work experience section */
 
-details {
+.work-experience-container details {
     margin-bottom: 0;
     background-color: #B9B9BC;
     border-radius: 10px;
@@ -182,11 +182,11 @@ details {
     }
 }
 
-details:hover {
+.work-experience-container details:hover {
     background-color: #9C9C9E;
 }
 
-details[open] {
+.work-experience-container details[open] {
     span::after {
         rotate: 360deg;
         transition-delay: 0.8s;
@@ -198,7 +198,7 @@ details[open] {
     box-shadow: 2px 0 3px #bbbbbb;
 }
 
-summary {
+.work-experience-container summary {
     display: block;
 }
 
@@ -215,7 +215,7 @@ summary {
     margin: 10px;
 }
 
-span:hover {
+.work-experience-container span:hover {
     cursor: pointer;
 }
 
