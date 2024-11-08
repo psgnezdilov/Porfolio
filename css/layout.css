@@ -315,6 +315,7 @@ details[open] + div.openai-content {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    font-size: 18px;
 }
 
 .image-content figure {
